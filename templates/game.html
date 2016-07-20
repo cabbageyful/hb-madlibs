@@ -1,12 +1,7 @@
-<!doctype html>
-<html>
-<head>
-    <title>Game page!</title>
-    <link rel="stylesheet" href="/static/madlibs.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
-</head>
-<body>
-    {{ play_game }} you are playing Madlibs!<br>
+{% extends 'base.html' %}
+{% block title %}Let's play!{% endblock %}
+{% block content %}
+    Yes, you are now playing Madlibs!<br>
     <form action="/madlib">
         Name a famous person? <input type="text" name="famous-person"><br>
         What is your favorite color? <input type="text" name="color"><br>
@@ -18,5 +13,4 @@
         <input type="submit" class="submit-button">
     </form>
 
-</body>
-</html>
+{% endblock %}

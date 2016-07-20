@@ -56,6 +56,10 @@ def show_madlib_form():
 def show_madlib():
     """Prints out the madlib."""
 
+    all_madlibs = ["madlib.html", "madlib2.html"]
+
+    madlib_story = choice(all_madlibs)
+
     user_person = request.args.get("famous-person")
     user_color = request.args.get("color")
     user_noun = request.args.get("noun")
@@ -64,7 +68,7 @@ def show_madlib():
     user_heroine = request.args.get("heroine")
     user_food = request.args.get("food")
 
-    return render_template("madlib.html",
+    return render_template(madlib_story,
                             famous=user_person,
                             color=user_color,
                             noun=user_noun,
