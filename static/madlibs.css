@@ -1,0 +1,17 @@
+body {
+    background-image: url("https://images7.alphacoders.com/332/332824.jpg");
+    background-repeat: repeat-y;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:  700;
+    margin-left: 100px;
+}
+
+.submit-button{
+    border-radius: 7px;
+    background-color: #ff69b4;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
